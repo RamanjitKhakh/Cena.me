@@ -15,7 +15,7 @@
 	        width: 360px;
 	        height: 300px;
 	        bottom: -250px;
-	        transition: bottom 15s ease;
+	        transition: bottom 10s ease;
 	        background-repeat: repeat-x;
 	        background-size: cover;
 	        background-image: url("cena2.png");    
@@ -23,8 +23,14 @@
 		}
 	</style>
 </head>
-<body>
+<body onload="changeBottom()">
 	<script>
+		
+		function changeBottom() {
+			document.getElementById('theCena').style.bottom = 0;
+
+		}
+
 		var context = new AudioContext();
 			
 		var source
